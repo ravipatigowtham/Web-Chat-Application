@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div>
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br>
+            <button onclick="joinCall()">Join Call</button>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div id="video-call-div">
+
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button_icon onclick="muteVideo()">
+                    <span class="button__icon">
+                        <ion-icon name="videocam-outline"></ion-icon>                     </span>
+                </button_icon>
+                
+                <button_icon onclick="muteAudio()">
+                <span class="button__icon">
+                    <ion-icon name="mic-outline"></ion-icon>
+                </span>
+                </button_icon>
+                <endbutton onclick="endCall()">
+                <span class="endbutton">
+                    <ion-icon name="call-sharp"></ion-icon>
+                </span>
+        
+                </endbutton>
+                   <button_icon>
+                    <a href="../chat/index.html" target="Blank">
+                        <button>
+                            Chat
+                        </button>
+    
+                    </a>
+                   </button_icon>
+                   
+                 
+                         
+               
+            </div>
+           
+        </div>
+
+        
+        <script src="./receiver.js"></script>
+    </body>
+
+</html>
